@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package hash;
+
+message Message
+{
+	required bytes data = 1;
+	required bytes public = 2;
+}
+
+message EncryptedMessage
+{
+	required bytes cipher = 1;
+}
